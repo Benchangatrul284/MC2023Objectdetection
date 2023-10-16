@@ -7,8 +7,10 @@ bash datasetting.sh
 ```
 ## 0. Download the dataset
 ```
-unzip Meichu2023TrainData.zip
-mv 2023MCH_TrainData datasets
+pip install gdown
+gdown https://drive.google.com/uc?id=1nSFa3GjFMnEU3H-09-KMTRxJZrMpIzTg
+unzip 2023MCH_TrainData.zip
+mv '2023MCH_TrainData' datasets
 ```
 ## 1. Clone the repository
 ```
@@ -19,18 +21,16 @@ git clone https://github.com/WongKinYiu/yolov7.git
 cd yolov7
 mkdir weights
 cd weights
-wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
+gdown https://drive.google.com/uc?id=1bMWnBO49sftpo0BjTZ4XHy9q9TnvhK9a
+gdown https://drive.google.com/uc?id=11xxH1XuQDaVvK1YyeGWA2gcj93zWSb4L
 ```
 ## 3. Download requirements
 ```
 cd ../
 pip install -r requirements.txt
 ```
-## 4. Test the model
 ```
-python detect.py --weights weights/yolov7.pt --source inference/images 
-```
-## 5. Spilt the dataset
+## 4. Spilt the dataset
 ```
 cd ../
 pip install natsort
@@ -45,5 +45,5 @@ cp yolov7-xray.yaml yolov7/cfg/training
 ## 7. Train the model
 ```
 cd yolov7
-python train.py --weights weights/yolov7.pt --cfg cfg/training/yolov7-xray.yaml --data data/xray.yaml --device 0 --batch-size 64 --epoch 10
+python train.py --weights weights/best.pt --cfg cfg/training/yolov7-xray.yaml --data data/xray.yaml --batch-size 9 --epoch 2
 ```

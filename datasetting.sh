@@ -10,6 +10,7 @@ cd yolov7
 mkdir weights
 cd weights
 gdown https://drive.google.com/uc?id=1bMWnBO49sftpo0BjTZ4XHy9q9TnvhK9a
+gdown https://drive.google.com/uc?id=11xxH1XuQDaVvK1YyeGWA2gcj93zWSb4L
 ## 3. Download requirements
 cd ../
 pip install -r requirements.txt
@@ -25,4 +26,4 @@ cp xray.yaml yolov7/data
 cp yolov7-xray.yaml yolov7/cfg/training
 ## 6. Train the model
 cd yolov7
-python train.py --weights weights/best.pt --cfg cfg/training/yolov7-xray.yaml --data data/xray.yaml --device 0 --batch-size 8 --epoch 10
+# python train.py --weights weights/best.pt --cfg cfg/training/yolov7-xray.yaml --data data/xray.yaml --batch-size 9 --epoch 2
