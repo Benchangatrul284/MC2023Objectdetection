@@ -1,0 +1,19 @@
+# COCO 2017 dataset http://cocodataset.org
+
+# # download command/URL (optional)
+# download: bash ./scripts/get_coco.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ./customdataset/images/train
+val: ./customdataset/images/val
+test: ./customdataset/images/test
+
+# number of classes
+nc: 5
+
+# class names
+names: ["ElectronicDevice", "Laptop", "Scissor", "Knife", "Gun"]
+
+
+# Dictionary that maps class names to IDs
+#class_name_to_id_mapping = {"ElectronicDevice": 0, "Laptop": 1, "Scissor": 2, "Knife": 3, "Gun": 4}
