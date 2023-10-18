@@ -13,7 +13,7 @@ gdown https://drive.google.com/uc?id=1bMWnBO49sftpo0BjTZ4XHy9q9TnvhK9a
 gdown https://drive.google.com/uc?id=11xxH1XuQDaVvK1YyeGWA2gcj93zWSb4L
 ## 3. Download requirements
 cd ../
-pip install -r requirements.txt
+# pip install -r requirements.txt
 
 ## 4. Spilt the dataset
 
