@@ -4,7 +4,7 @@ gdown https://drive.google.com/uc?id=1nSFa3GjFMnEU3H-09-KMTRxJZrMpIzTg
 unzip 2023MCH_TrainData.zip
 mv '2023MCH_TrainData' datasets
 ## 1. Clone the repository
-git clone https://github.com/WongKinYiu/yolov7.git
+# git clone https://github.com/WongKinYiu/yolov7.git
 ## 2. Download the pretrained model
 cd yolov7
 mkdir weights
